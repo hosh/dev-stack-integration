@@ -1,3 +1,6 @@
 [submodule "cookbooks/dev-stack-rails"]
 	path = cookbooks/dev-stack-rails
 	url = git://github.com/hosh/dev-stack-rails-cookbook.git
+[submodule "apps/dev-stack-rails-demo"]
+	path = apps/dev-stack-rails-demo
+	url = git://github.com/hosh/dev-stack-rails-demo.git
