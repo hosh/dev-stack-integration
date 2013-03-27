@@ -1,0 +1,7 @@
+
+Installing
+
+(1) Install VirtualBox
+(2) Install Vagrant (download from site)
+(3) Install vagrant berkshelf plugin
+    vagrant plugin install berkshelf-vagrant
