@@ -29,6 +29,18 @@ Vagrant::Config.run do |config|
   config.vm.provision :chef_solo do |chef|
     chef.data_bags_path = "data_bags"
     chef.json = {
+      'dev-stack' => {
+        app: { root_dir: '/vagrant/apps/dev-stack-rails-demo' },
+        rails: {
+          postgresql: {
+            development_name: 'dev-stack-rails-demo_development',
+            test_name:        'dev-stack-rails-demo_test',
+            username:         'dev-stack-rails-demo',
+            password:         ''
+          } # postgresql
+        } # rails
+      }, # dev-stack
+
       build_essential: { compiletime: true },
       postgresql: {
         password: { postgres: 'rails' },
