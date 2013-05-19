@@ -42,6 +42,7 @@ Vagrant::Config.run do |config|
       }, # dev-stack
 
       build_essential: { compiletime: true },
+      nginx: { default_site_enabled: false },
       postgresql: {
         password: { postgres: 'rails' },
 
